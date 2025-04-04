@@ -52,7 +52,7 @@ The `todo-example` demonstrates a simple Todo application built using the **amvc
 - Create a `View` to render the user interface and handle user interactions.
 - Implement a `Controller` to coordinate the logic between the `Model` and `View`.
 
-You can find the example in the `examples/todo-example` folder of this repository.
+You can find the example in the [`examples/todo-example`](https://github.com/Guillex387/amvc/tree/main/examples/todo-example) folder of this repository.
 
 ## License
 

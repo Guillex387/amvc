@@ -11,5 +11,8 @@ export default defineConfig({
       { text: 'View', link: '/view' },
       { text: 'Controller', link: '/controller' },
     ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/guillex387/amvc' },
+    ],
   },
 });
