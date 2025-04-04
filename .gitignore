@@ -24,4 +24,3 @@ dist-ssr
 *.sw?
 
 cache/
-pnpm-lock.yaml
