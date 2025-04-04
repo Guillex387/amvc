@@ -137,3 +137,61 @@ controller.run();
 - **Encapsulation**: Controllers encapsulate logic, making the application easier to maintain.
 - **Reusability**: The `BaseController` class provides reusable functionality, reducing boilerplate code.
 - **Flexibility**: The `Controller` interface allows for custom implementations tailored to specific needs.
+
+## Use interfaces in the controller for better abstraction
+
+> [!TIP] By depending on interfaces for models and views, controllers can support multiple views, making them interchangeable. Below is an example:
+>
+> ```typescript
+> import type { View, Model } from './core';
+> import { MyModel } from './my-model';
+> import { MyView1, MyView2 } from './my-view';
+>
+> type MyModelLike = Model<
+>   { id: number; name: string },
+>   { greet: (name: string) => string }
+> >;
+>
+> type MyViewLike = View<{ name: string }, { click: () => void }>;
+>
+> class MyController extends BaseController {
+>   private async handleClick() {
+>     const { name } = await this.model.fetchData();
+>     const message = this.model.handle('greet', name);
+>     alert(message);
+>   }
+>
+>   public constructor(private model: MyModelLike, private view: MyViewLike) {
+>     super();
+>     this.view.onEvent('click', () => this.handleClick());
+>   }
+>
+>   public run(): void {
+>     this.model.fetchData().then((data) => {
+>       const element = this.view.render(data);
+>       this.render(element);
+>     });
+>   }
+> }
+>
+> const model = new MyModel();
+> const view1 = new MyView1();
+> const view2 = new MyView2();
+> const controller = new MyController(model, view1);
+> controller.onUpdate((element) => {
+>   document.body.innerHTML = '';
+>   document.body.appendChild(element);
+> });
+> controller.run();
+> ```
+>
+> This approach enhances flexibility by allowing the controller to work with any view or model that adheres to the defined interfaces.
+> Now if you want to change the view now only pass it other in the constructor:
+>
+> ```typescript
+> const view1 = new MyView1();
+> const view2 = new MyView2();
+>
+> const controller = new MyController(model, view1); // [!code --]
+> const controller = new MyController(model, view2); // [!code ++]
+> ```

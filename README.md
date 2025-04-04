@@ -39,7 +39,7 @@ import { View, BaseView } from './core';
 
 ## Usage Guide
 
-To view the usage guide explore the [documentation of amvc](guillex387.github.io/amvc/).
+To view the usage guide explore the [documentation of amvc](https://guillex387.github.io/amvc/).
 
 ## Examples
 
