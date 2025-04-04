@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'amvc - Abstract MVC',
   description: 'API Reference',
-  base: 'amvc',
+  base: '/amvc',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
