@@ -23,7 +23,7 @@ To do this quickly:
 # Change to your project src/ folder
 git clone --depth=1 --branch core --single-branch https://github.com/guillex387/amvc.git
 mv amvc/core .
-rm -r amvc
+rm -rf amvc
 ```
 
 This command will create a `core/` folder in your `src/`.
