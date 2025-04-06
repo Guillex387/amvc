@@ -16,8 +16,7 @@ The library is designed to be simple. To use it, you only need to copy the `core
 To do this quickly:
 
 ```bash
-# In your project root
-cd src/
+# Change to your project src/ folder
 git clone --depth=1 --branch core --single-branch https://github.com/guillex387/amvc.git
 mv amvc/core .
 rm -r amvc
