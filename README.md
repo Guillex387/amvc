@@ -4,7 +4,7 @@
 
 This library was developed during the PAI (Programación de Aplicaciones Interactivas) course taught by [Professor Francisco de Sande](https://github.com/fsande) at the University of La Laguna. Its purpose is to facilitate faster and more flexible development in the laboratory practices of the course 2024-2025.
 
-> [!IMPORTANT] This library is written for learning purposes and is not intended for large-scale developments. However, it can be an interesting choice for small projects.
+> This library is written for learning purposes and is not intended for large-scale developments. However, it can be an interesting choice for small projects.
 
 ## Table of Contents
 

@@ -5,14 +5,20 @@ export default defineConfig({
   description: 'API Reference',
   base: '/amvc',
   themeConfig: {
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Model', link: '/model' },
-      { text: 'View', link: '/view' },
-      { text: 'Controller', link: '/controller' },
-    ],
+    nav: [{ text: 'Guide', link: '/' }],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/guillex387/amvc' },
+    ],
+    sidebar: [
+      {
+        text: 'Guide',
+        items: [
+          { text: 'Introduction', link: '/' },
+          { text: 'Model', link: '/model' },
+          { text: 'View', link: '/view' },
+          { text: 'Controller', link: '/controller' },
+        ],
+      },
     ],
   },
 });

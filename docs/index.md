@@ -1,4 +1,4 @@
-# amvc - Abstract MVC
+# What is amvc?
 
 **amvc** is a lightweight [typeScript](https://www.typescriptlang.org/) library that provides interfaces and base classes to implement the [Model-View-Controller (MVC)](https://developer.mozilla.org/en-US/docs/Glossary/MVC) architecture. It is designed to be fully type-safe, ensuring robust and maintainable code for your applications.
 
@@ -6,9 +6,13 @@ This library was developed during the PAI (Programación de Aplicaciones Interac
 
 > [!IMPORTANT] This library is written for learning purposes and is not intended for large-scale developments. However, it can be an interesting choice for small projects.
 
-## Table of Contents
+## Getting started
 
-[[toc]]
+The **amvc** library provides the components to implement the MVC architecture:
+
+1. [Model](/model): Handles the application's data and business logic.
+2. [View](/view): Manages the user interface and user interactions.
+3. [Controller](/controller): Acts as the intermediary between the Model and the View.
 
 ## Installation
 
@@ -31,14 +35,6 @@ import { View, BaseView } from './core';
 // ...
 ```
 
-## Getting started
-
-The **amvc** library provides the components to implement the MVC architecture:
-
-1. [Model](/model): Handles the application's data and business logic.
-2. [View](/view): Manages the user interface and user interactions.
-3. [Controller](/controller): Acts as the intermediary between the Model and the View.
-
 ## Examples
 
 This repository includes example projects to demonstrate how to use the **amvc** library. These examples can serve as a starting point for your own projects or as a reference for implementing specific features.
@@ -52,9 +48,3 @@ The `todo-example` demonstrates a simple Todo application built using the **amvc
 - Implement a `Controller` to coordinate the logic between the `Model` and `View`.
 
 You can find the example in the [`examples/todo-example`](https://github.com/Guillex387/amvc/tree/main/examples/todo-example) folder of this repository.
-
-## License
-
-amvc Copyright (c) 2025 Guillermo Silva González. All rights reserved.
-
-Licensed under the [MIT license](/LICENSE).
